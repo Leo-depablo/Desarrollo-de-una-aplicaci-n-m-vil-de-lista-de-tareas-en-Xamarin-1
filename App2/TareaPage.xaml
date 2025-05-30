@@ -1,0 +1,15 @@
+﻿<!-- TareaPage.xaml -->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             x:Class="TareasApp.TareaPage"
+             Title="Tarea">
+    <StackLayout Padding="20" Spacing="10">
+        <Label Text="Nombre de la Tarea" FontAttributes="Bold" />
+        <Entry x:Name="nombreEntry" Placeholder="Ej. Comprar leche" />
+
+        <Label Text="Descripción" FontAttributes="Bold" />
+        <Editor x:Name="descripcionEditor" HeightRequest="100" Placeholder="Ej. Ir al supermercado por la tarde" />
+
+        <Button Text="Guardar" Clicked="OnGuardarClicked" BackgroundColor="#4CAF50" TextColor="White"/>
+        <Button Text="Eliminar" x:Name="eliminarButton" IsVisible="False" Clicked="OnEliminarClicked" BackgroundColor="#F44336" TextColor="White"/>
+    </StackLayout>
+</ContentPage>
